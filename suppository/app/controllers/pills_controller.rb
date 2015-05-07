@@ -1,4 +1,5 @@
 class PillsController < ApplicationController
+
   def index
     #Anna do
   end
@@ -8,7 +9,7 @@ class PillsController < ApplicationController
   end
 
   def new
-    #Tom do
+    @pill = Pill.new
   end
 
   def edit
@@ -21,4 +22,5 @@ class PillsController < ApplicationController
   def pills_params
     params.require(:pill).permit(:name :message)
   end
+
 end

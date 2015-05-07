@@ -21,7 +21,7 @@ class PillsController < ApplicationController
   private
 
   def pills_params
-    params.require(:pill).permit(:name :message)
+    params.require(:pill).permit(:name)
   end
 
 end

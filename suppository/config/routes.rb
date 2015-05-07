@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
-  get 'pill/index'
 
-  get 'pill/show'
+  resource :pills
 
-  get 'pill/new'
-
-  get 'pill/edit'
+  # get 'pill/index'
+  #
+  # get 'pill/show'
+  #
+  # get 'pill/new'
+  #
+  # get 'pill/edit'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -2,6 +2,7 @@ class PillsController < ApplicationController
 
   def index
     #Anna do
+    @pills = Pill.all
   end
 
   def show

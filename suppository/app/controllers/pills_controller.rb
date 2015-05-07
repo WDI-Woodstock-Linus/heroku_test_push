@@ -12,6 +12,13 @@ class PillsController < ApplicationController
   end
 
   def edit
+    @pill = Pill.find(params[:id])
     #Matt do
+  end
+
+  private
+
+  def pills_params
+    params.require(:pill).permit(:name :message)
   end
 end

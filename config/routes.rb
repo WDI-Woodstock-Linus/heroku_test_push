@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   # resource :pills
 
-  root '/pills' => 'pills#index'
+  root 'pills#index'
 
   # get 'pill/index'
   #

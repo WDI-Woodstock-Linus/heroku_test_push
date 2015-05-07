@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  # resource :pills
+  resources :pills
 
-  root '/pills' => 'pills#index'
+  root '/' => 'pills#index'
 
   # get 'pill/index'
   #
